@@ -1,1 +1,4 @@
 Packages are called bundles
+
+How symfony work : the client send a requests , the browser send it into index.php , then the 
+controller get it manage what the user needs . then the twig which is responsible of generating the file that the bowser needs .
