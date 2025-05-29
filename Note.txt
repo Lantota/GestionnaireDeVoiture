@@ -2,3 +2,10 @@ Packages are called bundles
 
 How symfony work : the client send a requests , the browser send it into index.php , then the 
 controller get it manage what the user needs . then the twig which is responsible of generating the file that the bowser needs .
+
+Now let's learn and do at the same time on how to create a Symfony Vue but first , let me
+tell you what is a vue exactely , ok a vue is all that we show in the web browser : in our world , it's the
+html + style + dynamicity ... it's all the thing that we shaw more preciselly , it's the client view .
+
+Let's begin so :
+
