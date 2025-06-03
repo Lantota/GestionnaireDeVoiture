@@ -8,4 +8,11 @@ tell you what is a vue exactely , ok a vue is all that we show in the web browse
 html + style + dynamicity ... it's all the thing that we shaw more preciselly , it's the client view .
 
 Let's begin so :
+Let's create first the login form , the authentification form :
+php bin/console make:auth
+if i answered with Yes in the Password fields , I don't need anymore for an password entity comp
+The entity inside my User inscription : username:unique , Email , Contact , Birth , 
 
+php bin/console make:security
+
+controller class : SecurityController 
