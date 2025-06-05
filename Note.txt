@@ -1,18 +1,46 @@
 Packages are called bundles
 
 How symfony work : the client send a requests , the browser send it into index.php , then the 
-controller get it manage what the user needs . then the twig which is responsible of generating the file that the bowser needs .
+controller get it and manage what the user needs , then the twig which is responsible of generating
+ the file that the bowser needs .
 
-Now let's learn and do at the same time on how to create a Symfony Vue but first , let me
-tell you what is a vue exactely , ok a vue is all that we show in the web browser : in our world , it's the
+Now let's learn and do at the same time on how to create a Symfony Vue but first , let me tell you 
+what is a vue exactely , ok a vue is all that we show in the web browser : in our world , it's the
 html + style + dynamicity ... it's all the thing that we shaw more preciselly , it's the client view .
 
 Let's begin so :
+
 Let's create first the login form , the authentification form :
+
 php bin/console make:auth
-if i answered with Yes in the Password fields , I don't need anymore for an password entity comp
-The entity inside my User inscription : username:unique , Email , Contact , Birth , 
+if I answered with Yes in the Password fields , I don't need anymore for an password entity comp
+The entity inside my User inscription : username:unique , Email , Contact , Birth
 
 php bin/console make:security
 
 controller class : SecurityController 
+
+Create a hash password : php bin/console security:hash-password
+When typing the commande , it will demands for the password to be hashed , when you type the password after ,
+you will not see anything like for linux password on shell . Then press Enter and your hashed password will be 
+generated in a few .
+
+- Create a register Page :
+php bin/console make:entity #This commande is only used to create a registration database , and it is not the same
+as the make:entity commande witch is used for an normal authentification .
+
+php bin/console make:form RegistrationFormType User #This commande is used  to create a form inside a file called 
+RegistrationFormType.php inside src/Form/ witch is based on the User entity that has been createn.
+
+php bin/console make:controller RegistrationController # This command will create two files src/Controller/RegistrationController.php
+and templates/registration/index.html.twig .
+
+
+
+
+
+
+
+ORM : Object-Relational Mapping
+
+
